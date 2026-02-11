@@ -1,0 +1,296 @@
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.infoUser {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+    .foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+
+        img {
+            width: 95%;
+            height: 54vh;
+            border-radius: 100%;
+            box-shadow: 0px 0px 0px 4px #00aaff;
+            -webkit-box-shadow: 0px 0px 0px 4px #00aaff;
+            -moz-box-shadow: 0px 0px 0px 4px #00aaff;
+        }
+    }
+}
+
+.dadosUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 67%;
+
+    .nameUser {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--segundary-color);
+        }
+    }
+
+    .textUser {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1.1rem;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            width: 31%;
+        }
+
+        .cardMaps {
+            width: 15%;
+        }
+    }
+
+    .tags {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        height: 8vh;
+
+        .cardTag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--tag-color);
+            border-radius: 10px;
+            height: 6vh;
+            padding: .8rem;
+
+            p {
+                color: var(--segundary-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .usuario {
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .infoUser {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        gap: 1.5rem;
+
+        .foto {
+            width: 100%;
+
+            img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+
+    .dadosUsuario {
+        width: 100%;
+        gap: 1rem;
+        text-align: center;
+
+        .nameUser {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .textUser {
+            font-size: 0.9rem;
+        }
+
+        .contato {
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .card {
+                width: 100%;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .cardMaps {
+                width: 100%;
+            }
+        }
+
+        .tags {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            height: auto;
+
+            .cardTag {
+                height: auto;
+                padding: 0.5rem 0.8rem;
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 321px) and (max-width: 440px) {
+    .usuario {
+        padding: 1.5rem 0;
+    }
+
+    .infoUser {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 2rem;
+
+        .foto {
+            width: 100%;
+
+            img {
+                width: 190px;
+                height: 190px;
+            }
+        }
+    }
+
+    .dadosUsuario {
+        width: 100%;
+        gap: 1.2rem;
+        text-align: center;
+
+        .nameUser {
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .textUser {
+            font-size: 1rem;
+        }
+
+        .contato {
+            flex-direction: column;
+            gap: 1rem;
+
+            .card {
+                width: 100%;
+                justify-content: center;
+                gap: 0.6rem;
+            }
+
+            .cardMaps {
+                width: 100%;
+            }
+        }
+
+        .tags {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.7rem;
+            height: auto;
+
+            .cardTag {
+                padding: 0.6rem 1rem;
+
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 884px) {
+    .infoUser {
+        width: 90%;
+        gap: 1.5rem;
+
+        .foto {
+            width: 35%;
+
+            img {
+                width: 100%;
+                height: 38vh;
+            }
+        }
+    }
+
+    .dadosUsuario {
+        width: 60%;
+        gap: 1.2rem;
+
+        .nameUser {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .textUser {
+            font-size: 1rem;
+        }
+
+        .contato {
+            .card {
+                width: 32%;
+                font-size: 0.9rem;
+            }
+
+            .cardMaps {
+                width: 18%;
+            }
+        }
+
+        .tags {
+            width: 100%;
+            gap: 0.6rem;
+
+            .cardTag {
+                height: 5.5vh;
+
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

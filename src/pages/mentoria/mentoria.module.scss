@@ -1,0 +1,195 @@
+.mentoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+
+        .cardMentoria {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 30%;
+            height: 60vh;
+            color: var(--primary-color);
+            padding: 0 2rem 0 2rem;
+
+            img {
+                width: 92%;
+                height: 27vh;
+                border-radius: 10px;
+            }
+
+            p, h2 {
+                text-align: center;
+            }
+
+            button {
+                height: 8vh;
+                width: 45%;
+                border-radius: 10px;
+                border: none;
+                color: #fff;
+                background-color: var(--primary-color);
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        .cardCompartilhe {
+            border-right: solid 1px #CBCBCB;
+            border-left: solid 1px #CBCBCB;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .mentoria {
+        gap: 1rem;
+
+        .title {
+            height: auto;
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .section1 {
+            flex-direction: column;
+            height: auto;
+            gap: 1.5rem;
+
+            .cardMentoria {
+                width: 90%;
+                height: auto;
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                button {
+                    width: 100%;
+                    height: 48px;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .cardCompartilhe {
+                border: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 321px) and (max-width: 440px) {
+    .mentoria {
+        gap: 1.5rem;
+
+        .title {
+            height: auto;
+            font-size: 2.1rem;
+            margin: 1.5rem 0;
+        }
+
+        .section1 {
+            flex-direction: column;
+            height: auto;
+            gap: 2rem;
+
+            .cardMentoria {
+                width: 85%;
+                height: auto;
+                padding: 1.5rem;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                button {
+                    width: 90%;
+                    height: 52px;
+                }
+            }
+
+            .cardCompartilhe {
+                border: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 884px) {
+    .mentoria {
+        .title {
+            height: 20vh;
+            font-size: 2.2rem;
+        }
+
+        .section1 {
+            height: auto;
+            gap: 1rem;
+
+            .cardMentoria {
+                width: 32%;
+                height: auto;
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 22vh;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    font-size: 0.95rem;
+                }
+
+                button {
+                    width: 70%;
+                    height: 6vh;
+                }
+            }
+
+            .cardCompartilhe {
+                border-right: solid 1px #CBCBCB;
+                border-left: solid 1px #CBCBCB;
+            }
+        }
+    }
+}
